@@ -10,8 +10,8 @@ from keras.models import Sequential, load_model
 from keras.layers import LSTM, Dense, Activation
 from keras.optimizers import RMSprop
 
-# Save the csv file to a variable, tranform it into a list, join the text, and limit the characters
-text_df = pd.read_csv("C:/Users/arwin/python folder/text-generative-ai/fake_or_real_news.csv")
+# Save csv file to a variable, tranform it into a list, join the text, and limit the characters
+text_df = pd.read_csv("[Enter CSV file here]")
 text = list(text_df.text.values)
 joined_text = " ".join(text)
 partial_text = joined_text[:10000]
